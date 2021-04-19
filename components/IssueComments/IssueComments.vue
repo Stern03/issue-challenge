@@ -96,7 +96,9 @@ export default Vue.extend({
                 this.avatar_url = response.data.user.avatar_url
                 this.login = response.data.user.login
                 this.loading = false;
-            });
+            }).catch(function (error) {
+                console.log(error);
+	          });
         }
     },
     created() {

@@ -67,7 +67,9 @@ export default Vue.extend({
                 console.log(response.data);
                 this.issueLists = response.data;
                 this.loading = false;
-            });
+            }).catch(function (error) {
+                console.log(error);
+	        });
         }
     },
     created() {
