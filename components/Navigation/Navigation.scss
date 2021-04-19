@@ -1,0 +1,30 @@
+.navigation {
+  background-color: $bg-light-gray-color;
+  border-bottom: solid 1px $border-gray-color;
+  padding: 20px 30px;
+
+  h2 {
+    padding-bottom: 20px;
+    .nav-author {
+      color: $blue-color;
+      font-weight: 400;
+    }
+    .nav-bar {
+      font-weight: 400;
+      padding: 0 2px;
+    }
+    .nav-repository {
+      color: $blue-color;
+    }
+  }
+
+  ul.nav-tab {
+    text-align: center;
+  }
+  ul.nav-tab li {
+    display: inline-block;
+    width: 15%;
+    min-width: 90px;
+    font-weight: 400;
+  }
+}
